@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muhammad Haroon | Software Engineer</title>
+    <title>Muhammad Haroon | Software Engineer & Developer</title>
 
     <meta name="description"
-        content="Portfolio of Muhammad Haroon - Software Engineer specializing in Flutter, Web Development, Python, Artificial Intelligence, IoT, Robotics, UI/UX Design, and Project Management.">
+        content="Professional portfolio of Muhammad Haroon - Software Engineer specializing in Flutter, Web Development, Python, Artificial Intelligence, IoT, Robotics, UI/UX Design, and Project Management.">
 
     <meta name="keywords"
         content="Muhammad Haroon, Software Engineer, Flutter Developer, Web Developer, Python Developer, FastAPI, AI, Agentic AI, IoT, ESP32, Robotics, UI UX Designer, Portfolio">
@@ -22,11 +22,9 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -35,8 +33,6 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-
-
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
@@ -46,2630 +42,867 @@
     <!-- =======================
         PRELOADER
     ======================== -->
-
     <div id="preloader">
-
         <div class="loader"></div>
-
     </div>
 
     <!-- =======================
-        SCROLL TOP
+        HEADER / NAVBAR
     ======================== -->
-
-    <button id="scrollTop">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
-    </button>
-
-    <!-- =======================
-        HEADER
-    ======================== -->
-
     <header>
-
         <div class="container">
-
             <nav class="navbar">
 
-                <a href="#" class="logo">
-
-                    <span>Haroon</span>
-
-                </a>
-
                 <ul class="nav-links">
-
-                    <li><a href="#home">Home</a></li>
-
-                    <li><a href="#about">About</a></li>
-
-                    <li><a href="#skills">Skills</a></li>
-
-                    <li><a href="#experience">Experience</a></li>
-
-                    <li><a href="#projects">Projects</a></li>
-
-                    <li><a href="#services">Services</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-
+                    <li><a href="#home" class="nav-tab active" data-view="home">Home</a></li>
+                    <li><a href="#about" class="nav-tab" data-view="about">About</a></li>
+                    <li><a href="#academic" class="nav-tab" data-view="academic">Academic</a></li>
+                    <li><a href="#skills" class="nav-tab" data-view="skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-tab" data-view="projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-tab" data-view="contact">Contact</a></li>
                 </ul>
 
                 <div class="menu-btn">
-
                     <i class="fa-solid fa-bars"></i>
-
                 </div>
 
             </nav>
-
         </div>
-
     </header>
 
-<!-- =========================
-        HERO SECTION
-========================= -->
-
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-text">
-
-            <span class="hero-badge">
-                Welcome to My Portfolio
-            </span>
-
-            <h3>Hello, I'm</h3>
-
-            <h1>
-                Muhammad Haroon
-            </h1>
-
-            <h2>
-                <span id="typing"></span>
-            </h2>
-
-            <p>
-
-                A passionate Software Engineer specializing in Flutter,
-                Web Development, Python, Artificial Intelligence,
-                IoT, Robotics, UI/UX Design, and Project Management.
-                I enjoy building modern applications that solve
-                real-world problems.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="assets/resume/Resume.pdf"
-                    class="btn-outline"
-                    download>
-
-                    Download Resume
-
-                </a>
-
-            </div>
-
-            <div class="social-links">
-
-                <a href="#">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <div class="image-circle">
-
-                <img src="images/image.png"
-                    alt="Muhammad Haroon">
-
-            </div>
-
-            <div class="floating-card card1">
-
-                <i class="fa-brands fa-flutter"></i>
-
-                <span>Flutter</span>
-
-            </div>
-
-            <div class="floating-card card2">
-
-                <i class="fa-brands fa-python"></i>
-
-                <span>Python</span>
-
-            </div>
-
-            <div class="floating-card card3">
-
-                <i class="fa-solid fa-microchip"></i>
-
-                <span>IoT</span>
-
-            </div>
-
-            <div class="floating-card card4">
-
-                <i class="fa-solid fa-robot"></i>
-
-                <span>AI</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- ==========================================
-                ABOUT SECTION
-=========================================== -->
-<section id="about">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <h2>About Me</h2>
-
-            <p>
-                Learn more about my journey, experience, and passion for software development.
-            </p>
-
-        </div>
-
-        <div class="about-container">
-
-            <!-- Left Side -->
-
-            <div class="about-image">
-
-                <img src="images/image.png" alt="About Me">
-
-            </div>
-
-            <!-- Right Side -->
-
-            <div class="about-content">
-
-                <h3>
-                    Software Engineer & Technology Enthusiast
-                </h3>
-
-                <p>
-
-                    I'm Muhammad Haroon, a passionate Software Engineer who enjoys
-                    building modern applications and solving real-world problems through
-                    technology. My main focus is creating user-friendly software that is
-                    fast, reliable, and scalable.
-
-                </p>
-
-                <p>
-
-                    I have experience in Flutter, Web Development, Python,
-                    Artificial Intelligence, IoT, Robotics, UI/UX Design,
-                    and Project Management. I believe in continuous learning
-                    and always enjoy exploring new technologies.
-
-                </p>
-
-                <!-- Information -->
-
-                <div class="about-info">
-
-                    <div class="info-box">
-
-                        <h4>Name</h4>
-
-                        <span>Muhammad Haroon</span>
-
+    <!-- =========================================================
+        MAIN PAGE VIEWS CONTAINER (PAGE ROUTER)
+    ========================================================= -->
+    <main class="main-content">
+
+        <!-- ==========================================
+            VIEW 1: HOME PAGE
+        =========================================== -->
+        <section id="home-view" class="page-view active">
+            <div class="container">
+                <div class="hero-content">
+
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            </i> Software Engineer & Tech Innovator
+                        </div>
+
+                        <h3>Hello, I'm</h3>
+                        <h1>Muhammad Haroon</h1>
+
+                        <h2>
+                            <span id="typing"></span>
+                        </h2>
+
+                        <p>
+                            A passionate Software Engineer specializing in Flutter, Web Development,
+                            Python Backends, Artificial Intelligence, IoT, and Robotics. I engineer scalable,
+                            user-centric applications that solve real-world problems.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn nav-tab" data-view="projects">
+                                Explore Projects <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#academic" class="btn-outline nav-tab" data-view="academic">
+                                Academic Journey
+                            </a>
+                            <a href="assets/resume/Resume.pdf" class="btn-ghost" download>
+                                <i class="fa-solid fa-file-arrow-down"></i> Resume
+                            </a>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/muhammadharoon303" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/muhammadharoon" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:afridiharoon662@gmail.com" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="info-box">
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <!-- IMAGE LINK SLOT: Profile Avatar / Hero Image -->
+                            <!-- User replace src below with custom image link -->
+                            <img src="images/profile.png" alt="Muhammad Haroon" class="profile-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop';">
+                        </div>
 
-                        <h4>Profession</h4>
+                        <div class="floating-card card1">
+                            <i class="fa-brands fa-flutter"></i>
+                            <span>Flutter</span>
+                        </div>
 
-                        <span>Software Engineer</span>
+                        <div class="floating-card card2">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
 
+                        <div class="floating-card card3">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>IoT &amp; ESP32</span>
+                        </div>
+
+                        <div class="floating-card card4">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>AI Systems</span>
+                        </div>
                     </div>
 
-                    <div class="info-box">
+                </div>
 
-                        <h4>Country</h4>
-
-                        <span>Pakistan</span>
-
+                <!-- Statistics Bar -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h2 class="counter" data-target="35">35+</h2>
+                        <p>Projects Completed</p>
                     </div>
 
-                    <div class="info-box">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h2 class="counter" data-target="8">8</h2>
+                        <p>Tech Domains</p>
+                    </div>
 
-                        <h4>Email</h4>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h2 class="counter" data-target="25">25+</h2>
+                        <p>Frameworks &amp; Tools</p>
+                    </div>
 
-                        <span>afridiharoon662@gmail.com</span>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
+                        <h2 class="counter" data-target="100">100%</h2>
+                        <p>Commitment to Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            VIEW 2: ABOUT PAGE
+        =========================================== -->
+        <section id="about-view" class="page-view">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Learn more about my background, software engineering philosophy, and expertise.</p>
+                </div>
+
+                <div class="about-container">
+
+                    <!-- Left Side Image -->
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <!-- IMAGE LINK SLOT: About Page Picture -->
+                            <!-- User replace src below with custom image link -->
+                            <img src="images/image.png" alt="Muhammad Haroon - About" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                    </div>
+
+                    <!-- Right Side Content -->
+                    <div class="about-content">
+                        <div class="badge-tag">Software Engineer &amp; Developer</div>
+
+                        <h3>Architecting Modern Digital Products with Elegance &amp; Precision</h3>
+
+                        <p>
+                            I'm <strong>Muhammad Haroon</strong>, a Software Engineer dedicated to crafting robust
+                            mobile applications, high-performance web backends, intelligent AI systems, and hardware-integrated IoT solutions.
+                        </p>
+
+                        <p>
+                            My approach combines clean architectural practices with intuitive UI/UX design, ensuring every product is fast, secure, scalable, and delightful to use.
+                        </p>
+
+                        <div class="about-info-grid">
+                            <div class="info-box">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <div>
+                                    <h4>Full Name</h4>
+                                    <span>Muhammad Haroon</span>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <div>
+                                    <h4>Profession</h4>
+                                    <span>Software Engineer</span>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Pakistan</span>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>afridiharoon662@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="assets/resume/Resume.pdf" class="btn" download>
+                                <i class="fa-solid fa-download"></i> Download Resume
+                            </a>
+                            <a href="#contact" class="btn-outline nav-tab" data-view="contact">
+                                Get In Touch
+                            </a>
+                        </div>
 
                     </div>
 
                 </div>
 
-                <a href="assets/resume/Resume.pdf"
-                    class="btn"
-                    download>
-
-                    Download Resume
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
-                STATISTICS SECTION
-======================================== -->
-<section id="statistics">
-
-    <div class="container">
-
-        <div class="stats-container">
-
-            <div class="stat-card">
-
-                <h2 class="counter" data-target="35">15+</h2>
-
-                <p>Projects Completed</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter" data-target="8">5</h2>
-
-                <p>Development Domains</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter" data-target="20">25</h2>
-
-                <p>Technologies Used</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2 class="counter" data-target="100">100</h2>
-
-                <p>Learning Passion</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
-                SKILLS SECTION
-======================================== -->
-
-<section id="skills">
-
-    <div class="container">
-
-        <div class="section-header">
-            <h2>Technical Skills</h2>
-
-            <p>
-                Technologies, tools, and frameworks that I use to build modern software solutions.
-            </p>
-
-        </div>
-
-        <div class="skills-container">
-
-            <!-- Left Side -->
-
-            <div class="skills-progress">
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>Flutter Development</span>
-                        <span>95%</span>
+                <!-- Engineering Focus Highlights -->
+                <div class="focus-grid">
+                    <div class="focus-card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h4>Cross-Platform Mobile</h4>
+                        <p>Building high-performance Flutter applications for iOS and Android with SQLite &amp; cloud sync.</p>
                     </div>
 
-                    <div class="progress-bar">
-                        <div class="progress flutter"></div>
+                    <div class="focus-card">
+                        <i class="fa-solid fa-server"></i>
+                        <h4>Backend &amp; REST APIs</h4>
+                        <p>Developing scalable Python FastAPI backends, JWT authentication, and relational database schemas.</p>
                     </div>
 
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>Web Development</span>
-                        <span>92%</span>
+                    <div class="focus-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>AI &amp; Automation</h4>
+                        <p>Implementing Agentic AI, RAG pipelines, Prompt Engineering, and intelligent decision systems.</p>
                     </div>
 
-                    <div class="progress-bar">
-                        <div class="progress web"></div>
+                    <div class="focus-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h4>IoT &amp; Automation</h4>
+                        <p>Designing web interface systems with ESP32 controllers for industrial motor monitoring &amp; sensors.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+            VIEW 3: ACADEMIC PAGE (ROW SLIDER)
+        =========================================== -->
+        <section id="academic-view" class="page-view">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Academic Journey</h2>
+                    <p>Explore my academic background, technical coursework, certifications, and continuous learning.</p>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-header-controls">
+                    <span class="slider-hint"><i class="fa-solid fa-arrows-left-right"></i> Scroll or use buttons to navigate</span>
+                    <div class="slider-buttons">
+                        <button class="slider-btn prev-btn" id="academic-prev" aria-label="Previous Slide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next-btn" id="academic-next" aria-label="Next Slide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Academic Row Slider Container -->
+                <div class="row-slider-container">
+                    <div class="row-slider-track" id="academic-track">
+
+                        <!-- Slide 1: Degree -->
+                        <div class="slider-card academic-card">
+                            <div class="card-badge"><i class="fa-solid fa-graduation-cap"></i> Degree</div>
+                            <span class="academic-period">Ongoing</span>
+                            <h3>BS Software Engineering</h3>
+                            <h4>University Degree Program</h4>
+                            <p>
+                                Comprehensive study in software architecture, algorithm design, data structures, database management systems, operating systems, mobile software development, and human-computer interaction.
+                            </p>
+                            <div class="card-footer-tags">
+                                <span>Software Architecture</span>
+                                <span>OOP</span>
+                                <span>DBMS</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Coursework -->
+                        <div class="slider-card academic-card">
+                            <div class="card-badge"><i class="fa-solid fa-book-open"></i> Curriculum</div>
+                            <span class="academic-period">Core Foundation</span>
+                            <h3>Relevant Coursework</h3>
+                            <h4>Technical Fundamentals</h4>
+                            <ul class="academic-list">
+                                <li><i class="fa-solid fa-check"></i> Data Structures &amp; Algorithms</li>
+                                <li><i class="fa-solid fa-check"></i> Object-Oriented Programming (OOP)</li>
+                                <li><i class="fa-solid fa-check"></i> Database Systems (SQL &amp; Relational Schema)</li>
+                                <li><i class="fa-solid fa-check"></i> Mobile &amp; Web Application Engineering</li>
+                                <li><i class="fa-solid fa-check"></i> Artificial Intelligence &amp; Robotics</li>
+                            </ul>
+                        </div>
+
+                        <!-- Slide 3: Final Year Project -->
+                        <div class="slider-card academic-card">
+                            <div class="card-badge"><i class="fa-solid fa-microchip"></i> Capstone</div>
+                            <span class="academic-period">Final Year Project</span>
+                            <h3>Industrial Motor Control System</h3>
+                            <h4>ESP32 &amp; Web HCI Interface</h4>
+                            <p>
+                                Engineered a web-based Human Computer Interface to remotely monitor and control a three-phase industrial motor using ESP32 microcontrollers, relays, and real-time telemetry.
+                            </p>
+                            <div class="card-footer-tags">
+                                <span>ESP32</span>
+                                <span>C++</span>
+                                <span>Web HCI</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: Continuous Learning -->
+                        <div class="slider-card academic-card">
+                            <div class="card-badge"><i class="fa-solid fa-laptop-code"></i> Upskilling</div>
+                            <span class="academic-period">Self-Directed</span>
+                            <h3>Continuous Technical Growth</h3>
+                            <h4>Modern Tech Stacks</h4>
+                            <p>
+                                Active mastery of modern software tools: Flutter state management, Python FastAPI asynchronous programming, Agentic AI agent development, and responsive UI design in Figma.
+                            </p>
+                            <div class="card-footer-tags">
+                                <span>Flutter</span>
+                                <span>FastAPI</span>
+                                <span>Agentic AI</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Current Focus -->
+                        <div class="slider-card academic-card">
+                            <div class="card-badge"><i class="fa-solid fa-brain"></i> Specialization</div>
+                            <span class="academic-period">Current Focus</span>
+                            <h3>AI &amp; Smart Systems</h3>
+                            <h4>LLMs &amp; RAG Architectures</h4>
+                            <p>
+                                Researching and building applications leveraging Retrieval-Augmented Generation (RAG), Prompt Optimization, LLM orchestration frameworks, and autonomous workflow bots.
+                            </p>
+                            <div class="card-footer-tags">
+                                <span>RAG</span>
+                                <span>LLMs</span>
+                                <span>Prompting</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+            VIEW 4: SKILLS PAGE
+        =========================================== -->
+        <section id="skills-view" class="page-view">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Skills &amp; Technologies</h2>
+                    <p>A comprehensive overview of programming languages, frameworks, databases, and engineering tools.</p>
+                </div>
+
+                <div class="skills-container">
+
+                    <!-- Skill Progress Bars -->
+                    <div class="skills-progress">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Flutter &amp; Dart</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web (HTML5, CSS3, JavaScript)</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python &amp; FastAPI</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI &amp; Prompt Engineering</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>IoT &amp; ESP32 Hardware</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI / UX Design &amp; Figma</span>
+                                <span>84%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 84%;"></div>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>Python Development</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress python"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>Artificial Intelligence</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress ai"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>IoT Development</span>
-                        <span>88%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress iot"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>UI / UX Design</span>
-                        <span>82%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress ui"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-title">
-                        <span>Project Management</span>
-                        <span>86%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress pm"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Right Side -->
-
-            <div class="tech-grid">
-
-                <div class="tech-card">
-                    <img src="assets/images/flutter.png" alt="Flutter">
-                    <h4>Flutter</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/web.png" alt="Web">
-                    <h4>HTML • CSS • JavaScript</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/python.png" alt="Python">
-                    <h4>Python</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/ai.png" alt="AI">
-                    <h4>Artificial Intelligence</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/iot.png" alt="IoT">
-                    <h4>Internet of Things</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/robotics.png" alt="Robotics">
-                    <h4>Robotics</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/uiux.png" alt="UI">
-                    <h4>UI / UX Design</h4>
-                </div>
-
-                <div class="tech-card">
-                    <img src="assets/images/project-management.png" alt="PM">
-                    <h4>Project Management</h4>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
-                EXPERIENCE SECTION
-======================================== -->
-
-<section id="experience">
-
-    <div class="container">
-
-        <div class="section-header">
-            <h2>Experience</h2>
-
-            <p>
-                My journey through software development, leadership, and innovative technologies.
-            </p>
-
-        </div>
-
-        <div class="timeline">
-
-            <!-- Experience 1 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-icon">
-
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-                        Current
-                    </span>
-
-                    <h3>Software Engineer</h3>
-
-                    <h4>Full Stack Developer</h4>
-
-                    <p>
-
-                        Building modern applications using Flutter,
-                        Python, FastAPI, HTML, CSS and JavaScript.
-                        Developing scalable software with responsive
-                        interfaces and efficient backend systems.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Experience 2 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-icon">
-
-                    <i class="fa-solid fa-brain"></i>
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-
-                        Current
-
-                    </span>
-
-                    <h3>Artificial Intelligence</h3>
-
-                    <h4>Agentic AI & Prompt Engineering</h4>
-
-                    <p>
-
-                        Learning and developing AI solutions using
-                        Large Language Models, Prompt Engineering,
-                        AI Automation and Agentic AI workflows.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Experience 3 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-icon">
-
-                    <i class="fa-solid fa-microchip"></i>
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-
-                        Final Year Project
-
-                    </span>
-
-                    <h3>IoT Developer</h3>
-
-                    <h4>Industrial Motor Automation</h4>
-
-                    <p>
-
-                        Designed and developed a Web-Based Human
-                        Computer Interface for controlling and
-                        monitoring a three-phase industrial motor
-                        using ESP32 technology.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Experience 4 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-icon">
-
-                    <i class="fa-solid fa-users"></i>
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-year">
-
-                        Leadership
-
-                    </span>
-
-                    <h3>Project Manager</h3>
-
-                    <h4>Software Projects</h4>
-
-                    <p>
-
-                        Planned, managed and coordinated software
-                        projects while ensuring collaboration,
-                        documentation and timely delivery.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ========================================
-                TECH STACK
-======================================== -->
-
-<section id="tech-stack">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            
-
-            <h2>Tech Stack</h2>
-
-            <p>
-                Technologies, frameworks, programming languages, databases and tools that I use to build modern software.
-            </p>
-
-        </div>
-
-        <div class="stack-grid">
-
-            <div class="stack-item">
-                <i class="fa-brands fa-flutter"></i>
-                <h4>Flutter</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-html5"></i>
-                <h4>HTML5</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h4>CSS3</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-js"></i>
-                <h4>JavaScript</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-python"></i>
-                <h4>Python</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-server"></i>
-                <h4>FastAPI</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-database"></i>
-                <h4>PostgreSQL</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-database"></i>
-                <h4>SQLite</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-robot"></i>
-                <h4>Artificial Intelligence</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-microchip"></i>
-                <h4>ESP32</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-code-branch"></i>
-                <h4>Git</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-github"></i>
-                <h4>GitHub</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-brands fa-figma"></i>
-                <h4>Figma</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-diagram-project"></i>
-                <h4>Project Management</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-wifi"></i>
-                <h4>IoT</h4>
-            </div>
-
-            <div class="stack-item">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h4>Responsive Design</h4>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================================
-                EDUCATION SECTION
-======================================== -->
-
-<section id="education">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <!-- <span>Education</span> -->
-
-            <h2>Academic Journey</h2>
-
-            <p>
-                My academic background and continuous learning in modern software technologies.
-            </p>
-
-        </div>
-
-        <div class="education-grid">
-
-            <!-- Education Card -->
-
-            <div class="education-card">
-
-                <div class="education-icon">
-
-                    <i class="fa-solid fa-graduation-cap"></i>
-
-                </div>
-
-                <span class="education-year">
-                    Ongoing
-                </span>
-
-                <h3>Bachelor of Software Engineering</h3>
-
-                <h4>University</h4>
-
-                <p>
-
-                    Studying Software Engineering with a focus on software
-                    development, algorithms, databases, operating systems,
-                    mobile applications, web technologies and software design.
-
-                </p>
-
-            </div>
-
-            <!-- Coursework -->
-
-            <div class="education-card">
-
-                <div class="education-icon">
-
-                    <i class="fa-solid fa-book-open"></i>
-
-                </div>
-
-                <h3>Relevant Coursework</h3>
-
-                <ul>
-
-                    <li>Data Structures & Algorithms</li>
-                    <li>Object-Oriented Programming</li>
-                    <li>Database Systems</li>
-                    <li>Software Engineering</li>
-                    <li>Mobile Application Development</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Human Computer Interaction</li>
-                    <li>Internet of Things (IoT)</li>
-
-                </ul>
-
-            </div>
-
-            <!-- Continuous Learning -->
-
-            <div class="education-card">
-
-                <div class="education-icon">
-
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                </div>
-
-                <h3>Continuous Learning</h3>
-
-                <p>
-
-                    Continuously improving my skills in Flutter,
-                    Python, FastAPI, Artificial Intelligence,
-                    Agentic AI, Robotics, UI/UX Design,
-                    Project Management and Cloud Technologies.
-
-                </p>
-
-            </div>
-
-            <!-- Current Focus -->
-
-            <div class="education-card">
-
-                <div class="education-icon">
-
-                    <i class="fa-solid fa-brain"></i>
-
-                </div>
-
-                <h3>Current Learning</h3>
-
-                <p>
-
-                    Exploring Agentic AI, Large Language Models,
-                    Prompt Engineering, Retrieval-Augmented Generation (RAG),
-                    AI Automation and intelligent software systems.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
-                PROJECTS SECTION
-======================================== -->
-
-<section id="projects">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <!-- <span>Portfolio</span> -->
-
-            <h2>My Projects</h2>
-
-            <p>
-                A collection of projects I've developed in Flutter, Web, Python,
-                Artificial Intelligence, IoT, Robotics, UI/UX Design and
-                Project Management.
-            </p>
-
-        </div>
-
-        <!-- Categories -->
-
-        <div class="project-filter">
-
-            <button class="filter-btn active" data-filter="all">All</button>
-
-            <button class="filter-btn" data-filter="flutter">Flutter</button>
-
-            <button class="filter-btn" data-filter="web">Web</button>
-
-            <button class="filter-btn" data-filter="python">Python</button>
-
-            <button class="filter-btn" data-filter="ai">AI</button>
-
-            <button class="filter-btn" data-filter="iot">IoT</button>
-
-            <button class="filter-btn" data-filter="robotics">Robotics</button>
-
-            <button class="filter-btn" data-filter="uiux">UI / UX</button>
-
-        </div>
-
-        <div class="projects-grid">
-
-            <!-- ================= Flutter ================= -->
-
-            <div class="project-card flutter">
-
-                <img src="assets/images/project1.jpg" alt="MediStore">
-
-                <div class="project-content">
-
-                    <h3>MediStore</h3>
-
-                    <p>
-                        Pharmacy Management System with barcode scanner,
-                        medicine inventory and AI-powered medicine assistant.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>SQLite</span>
-                        <span>AI</span>
+                    <!-- Tech Stack Cards Grid -->
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <i class="fa-brands fa-flutter tech-icon flutter"></i>
+                            <h4>Flutter</h4>
+                            <span>Mobile &amp; Web Apps</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-brands fa-python tech-icon python"></i>
+                            <h4>Python</h4>
+                            <span>Backends &amp; AI Scripting</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-solid fa-server tech-icon server"></i>
+                            <h4>FastAPI</h4>
+                            <span>Async RESTful APIs</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-brands fa-js tech-icon js"></i>
+                            <h4>JavaScript</h4>
+                            <span>Frontend Logic &amp; ES6+</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-solid fa-database tech-icon db"></i>
+                            <h4>PostgreSQL &amp; SQLite</h4>
+                            <span>Relational Databases</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-solid fa-microchip tech-icon iot"></i>
+                            <h4>ESP32 &amp; Microcontrollers</h4>
+                            <span>IoT Systems &amp; Hardware</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-solid fa-robot tech-icon ai"></i>
+                            <h4>Agentic AI &amp; RAG</h4>
+                            <span>LLM Orchestration</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-brands fa-git-alt tech-icon git"></i>
+                            <h4>Git &amp; GitHub</h4>
+                            <span>Version Control</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <i class="fa-brands fa-figma tech-icon figma"></i>
+                            <h4>Figma</h4>
+                            <span>UI/UX &amp; Wireframing</span>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
+        </section>
 
-            <div class="project-card flutter">
+        <!-- ==========================================
+            VIEW 5: PROJECTS PAGE (ROW SLIDER)
+        =========================================== -->
+        <section id="projects-view" class="page-view">
+            <div class="container">
 
-                <img src="assets/images/project2.jpg" alt="Scanner">
-
-                <div class="project-content">
-
-                    <h3>Medicine Barcode Scanner</h3>
-
-                    <p>
-                        Barcode scanning application for quick medicine
-                        identification and inventory management.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>Camera</span>
-                        <span>SQLite</span>
-                    </div>
-
+                <div class="section-header">
+                    <h2>Projects Showcase</h2>
+                    <p>Browse through my portfolio of cross-platform apps, web applications, backends, AI tools, and IoT systems.</p>
                 </div>
 
-            </div>
-
-            <div class="project-card flutter">
-
-                <img src="assets/images/project3.jpg" alt="AI Assistant">
-
-                <div class="project-content">
-
-                    <h3>AI Medicine Assistant</h3>
-
-                    <p>
-                        AI-powered medicine recommendation and
-                        healthcare assistant application.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>OpenAI</span>
-                        <span>API</span>
-                    </div>
-
+                <!-- Category Filters -->
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="flutter">Flutter</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="robotics">Robotics</button>
                 </div>
 
-            </div>
-
-            <div class="project-card flutter">
-
-                <img src="assets/images/project4.jpg" alt="Inventory">
-
-                <div class="project-content">
-
-                    <h3>Inventory Management</h3>
-
-                    <p>
-                        Medicine inventory management system with stock,
-                        pricing and expiry tracking.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>SQLite</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="project-card flutter">
-
-                <img src="assets/images/project5.jpg" alt="Authentication">
-
-                <div class="project-content">
-
-                    <h3>Flutter Authentication</h3>
-
-                    <p>
-                        Secure login and authentication system
-                        with user management.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>Firebase</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- ================= WEB ================= -->
-
-            <div class="project-card web">
-
-                <img src="assets/images/project6.jpg" alt="Tech Pioneers">
-
-                <div class="project-content">
-
-                    <h3>Tech Pioneers Website</h3>
-
-                    <p>
-                        Modern responsive software company website
-                        with animations and premium UI.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="project-card web">
-
-                <img src="assets/images/project7.jpg" alt="Portfolio">
-
-                <div class="project-content">
-
-                    <h3>Personal Portfolio</h3>
-
-                    <p>
-                        Professional portfolio website showcasing
-                        projects, skills and experience.
-                    </p>
-
-                    <div class="tags">
-                        <span>Portfolio</span>
-                        <span>Responsive</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="project-card web">
-
-                <img src="assets/images/project8.jpg" alt="AI Blog">
-
-                <div class="project-content">
-
-                    <h3>AI Blog Website</h3>
-
-                    <p>
-                        Blog platform focused on Artificial Intelligence
-                        articles and learning resources.
-                    </p>
-
-                    <div class="tags">
-                        <span>Blog</span>
-                        <span>HTML</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-<!-- ========================================
-                PROJECTS SECTION
-======================================== -->
-
-<section id="projects">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <!-- <span>My Work</span> -->
-
-            <h2>Featured Projects</h2>
-
-            <p>
-                A collection of projects I've built in Flutter, Web, Python, AI, IoT, Robotics, UI/UX, and Project Management.
-            </p>
-
-        </div>
-
-        <!-- Filter Buttons -->
-
-        <div class="project-filter">
-
-            <button class="filter-btn active" data-filter="all">All</button>
-
-            <button class="filter-btn" data-filter="flutter">Flutter</button>
-
-            <button class="filter-btn" data-filter="web">Web</button>
-
-            <button class="filter-btn" data-filter="python">Python</button>
-
-            <button class="filter-btn" data-filter="ai">AI</button>
-
-            <button class="filter-btn" data-filter="iot">IoT</button>
-
-            <button class="filter-btn" data-filter="robotics">Robotics</button>
-
-            <button class="filter-btn" data-filter="uiux">UI / UX</button>
-
-        </div>
-
-        <!-- Projects Grid -->
-
-        <div class="projects-grid">
-
-            <!-- Project 1 -->
-
-            <div class="project-card flutter">
-
-                <img src="assets/images/project1.jpg" alt="MediStore">
-
-                <div class="project-content">
-
-                    <h3>MediStore</h3>
-
-                    <p>
-                        A Flutter-based pharmacy management application with medicine inventory, barcode scanning, and AI-powered medicine assistance.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>Flutter</span>
-                        <span>SQLite</span>
-                        <span>AI</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Live Demo</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Project 2 -->
-
-            <div class="project-card web">
-
-                <img src="assets/images/project2.jpg" alt="Tech Pioneers">
-
-                <div class="project-content">
-
-                    <h3>Tech Pioneers Website</h3>
-
-                    <p>
-                        A modern responsive company website featuring animations, team management, services, and project showcase.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Live Demo</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Project 3 -->
-
-            <div class="project-card python">
-
-                <img src="assets/images/project3.jpg" alt="FastAPI">
-
-                <div class="project-content">
-
-                    <h3>FastAPI Backend</h3>
-
-                    <p>
-                        RESTful backend built with FastAPI featuring authentication, database integration, and API endpoints for Flutter applications.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>PostgreSQL</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Documentation</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- ================= PYTHON ================= -->
-
-<div class="project-card python">
-
-    <img src="assets/images/project9.jpg" alt="FastAPI Backend">
-
-    <div class="project-content">
-
-        <h3>FastAPI Backend</h3>
-
-        <p>
-            Scalable backend for web and Flutter applications with REST APIs,
-            authentication and database integration.
-        </p>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>REST API</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card python">
-
-    <img src="assets/images/project10.jpg" alt="REST API">
-
-    <div class="project-content">
-
-        <h3>REST API Development</h3>
-
-        <p>
-            Designed secure and scalable REST APIs for modern software
-            applications.
-        </p>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>API</span>
-            <span>JSON</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card python">
-
-    <img src="assets/images/project11.jpg" alt="Authentication">
-
-    <div class="project-content">
-
-        <h3>Authentication API</h3>
-
-        <p>
-            User authentication, authorization and secure login system
-            using JWT and FastAPI.
-        </p>
-
-        <div class="tags">
-            <span>JWT</span>
-            <span>FastAPI</span>
-            <span>Security</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card python">
-
-    <img src="assets/images/project12.jpg" alt="Database">
-
-    <div class="project-content">
-
-        <h3>Database Management</h3>
-
-        <p>
-            Database integration using SQLite and PostgreSQL for scalable
-            backend applications.
-        </p>
-
-        <div class="tags">
-            <span>SQLite</span>
-            <span>PostgreSQL</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card python">
-
-    <img src="assets/images/project13.jpg" alt="Flutter Backend">
-
-    <div class="project-content">
-
-        <h3>Backend for Flutter Apps</h3>
-
-        <p>
-            API development for mobile applications including authentication,
-            CRUD operations and cloud integration.
-        </p>
-
-        <div class="tags">
-            <span>Flutter</span>
-            <span>FastAPI</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= AI ================= -->
-
-<div class="project-card ai">
-
-    <img src="assets/images/project14.jpg" alt="Agentic AI">
-
-    <div class="project-content">
-
-        <h3>Agentic AI Learning</h3>
-
-        <p>
-            Practical projects exploring Agentic AI concepts, autonomous
-            workflows and intelligent systems.
-        </p>
-
-        <div class="tags">
-            <span>LLM</span>
-            <span>AI</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card ai">
-
-    <img src="assets/images/project15.jpg" alt="Prompt Engineering">
-
-    <div class="project-content">
-
-        <h3>Prompt Engineering</h3>
-
-        <p>
-            Optimized prompts for LLMs to improve reasoning, coding,
-            automation and content generation.
-        </p>
-
-        <div class="tags">
-            <span>Prompting</span>
-            <span>LLM</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card ai">
-
-    <img src="assets/images/project16.jpg" alt="LLM">
-
-    <div class="project-content">
-
-        <h3>LLM Assistant</h3>
-
-        <p>
-            AI assistant powered by Large Language Models for answering
-            questions and automating daily tasks.
-        </p>
-
-        <div class="tags">
-            <span>LLM</span>
-            <span>Python</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card ai">
-
-    <img src="assets/images/project17.jpg" alt="Automation">
-
-    <div class="project-content">
-
-        <h3>AI Workflow Automation</h3>
-
-        <p>
-            Intelligent automation workflows integrating AI models
-            into software development processes.
-        </p>
-
-        <div class="tags">
-            <span>Automation</span>
-            <span>AI</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card ai">
-
-    <img src="assets/images/project18.jpg" alt="RAG">
-
-    <div class="project-content">
-
-        <h3>RAG Experiments</h3>
-
-        <p>
-            Retrieval-Augmented Generation experiments for building
-            knowledge-aware AI assistants.
-        </p>
-
-        <div class="tags">
-            <span>RAG</span>
-            <span>LLM</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= IoT ================= -->
-
-<div class="project-card iot">
-
-    <img src="assets/images/project19.jpg" alt="Motor">
-
-    <div class="project-content">
-
-        <h3>Industrial Motor Control</h3>
-
-        <p>
-            Final Year Project for controlling and monitoring an industrial
-            three-phase motor using ESP32.
-        </p>
-
-        <div class="tags">
-            <span>ESP32</span>
-            <span>IoT</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card iot">
-
-    <img src="assets/images/project20.jpg" alt="Dashboard">
-
-    <div class="project-content">
-
-        <h3>ESP32 Web Dashboard</h3>
-
-        <p>
-            Web-based Human Computer Interface for remote monitoring
-            and control of industrial devices.
-        </p>
-
-        <div class="tags">
-            <span>ESP32</span>
-            <span>Dashboard</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card iot">
-
-    <img src="assets/images/project21.jpg" alt="ESP32-CAM">
-
-    <div class="project-content">
-
-        <h3>ESP32-CAM Monitoring</h3>
-
-        <p>
-            Smart monitoring solution using ESP32-CAM with real-time
-            image streaming.
-        </p>
-
-        <div class="tags">
-            <span>ESP32-CAM</span>
-            <span>Camera</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card iot">
-
-    <img src="assets/images/project22.jpg" alt="Smart Home">
-
-    <div class="project-content">
-
-        <h3>Smart Home Automation</h3>
-
-        <p>
-            IoT-based automation system for controlling home appliances
-            through a web interface.
-        </p>
-
-        <div class="tags">
-            <span>IoT</span>
-            <span>Automation</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card iot">
-
-    <img src="assets/images/project23.jpg" alt="Monitoring">
-
-    <div class="project-content">
-
-        <h3>Sensor Monitoring System</h3>
-
-        <p>
-            Real-time monitoring system using sensors for data collection
-            and visualization.
-        </p>
-
-        <div class="tags">
-            <span>Sensors</span>
-            <span>ESP32</span>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card iot">
-
-    <img src="assets/images/project24.jpg" alt="Remote Control">
-
-    <div class="project-content">
-
-        <h3>Remote Device Control</h3>
-
-        <p>
-            IoT dashboard for securely controlling connected devices
-            over Wi-Fi.
-        </p>
-
-        <div class="tags">
-            <span>Wi-Fi</span>
-            <span>ESP32</span>
-        </div>
-
-    </div>
-
-    </div>
-    <!-- ================= ROBOTICS ================= -->
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project25.jpg" alt="Line Following Robot">
-
-    <div class="project-content">
-
-        <h3>Autonomous Line Following Robot</h3>
-
-        <p>
-            Designed an autonomous robot capable of following a predefined path using sensor-based navigation.
-        </p>
-
-        <div class="tags">
-            <span>Robotics</span>
-            <span>Sensors</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project26.jpg" alt="Obstacle Avoidance Robot">
-
-    <div class="project-content">
-
-        <h3>Obstacle Avoidance Robot</h3>
-
-        <p>
-            Built a robot capable of detecting and avoiding obstacles using ultrasonic sensors.
-        </p>
-
-        <div class="tags">
-            <span>Robotics</span>
-            <span>Arduino</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project27.jpg" alt="Bluetooth Robot">
-
-    <div class="project-content">
-
-        <h3>Bluetooth Controlled Robot</h3>
-
-        <p>
-            Mobile-controlled robot using Bluetooth communication for wireless movement.
-        </p>
-
-        <div class="tags">
-            <span>Bluetooth</span>
-            <span>Robotics</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project28.jpg" alt="WiFi Robot">
-
-    <div class="project-content">
-
-        <h3>Wi-Fi Controlled Robot</h3>
-
-        <p>
-            Developed a robot that can be controlled remotely through a web interface using Wi-Fi.
-        </p>
-
-        <div class="tags">
-            <span>ESP32</span>
-            <span>Wi-Fi</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project29.jpg" alt="Voice Robot">
-
-    <div class="project-content">
-
-        <h3>Voice Controlled Robot</h3>
-
-        <p>
-            Robot controlled through voice commands for hands-free navigation and control.
-        </p>
-
-        <div class="tags">
-            <span>Voice</span>
-            <span>AI</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project30.jpg" alt="AI Robot">
-
-    <div class="project-content">
-
-        <h3>AI Autonomous Robot</h3>
-
-        <p>
-            Intelligent robotic system combining computer vision and AI for autonomous decision-making.
-        </p>
-
-        <div class="tags">
-            <span>AI</span>
-            <span>Robotics</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= UI / UX ================= -->
-
-<div class="project-card uiux">
-
-    <img src="assets/images/project31.jpg" alt="UI Design">
-
-    <div class="project-content">
-
-        <h3>UI / UX Design Collection</h3>
-
-        <p>
-            A collection of modern mobile apps, dashboards, landing pages and business website designs created in Figma.
-        </p>
-
-        <div class="tags">
-            <span>Figma</span>
-            <span>UI/UX</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-figma"></i> Figma</a>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= PROJECT MANAGEMENT ================= -->
-
-<div class="project-card management">
-
-    <img src="assets/images/project32.jpg" alt="Project Management">
-
-    <div class="project-content">
-
-        <h3>Software Project Management</h3>
-
-        <p>
-            Managed software projects using Agile methodology, sprint planning, documentation, and team collaboration.
-        </p>
-
-        <div class="tags">
-            <span>Agile</span>
-            <span>Scrum</span>
-            <span>Management</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-solid fa-file-lines"></i> Documentation</a>
-        </div>
-
-    </div>
-
-</div>
-
-</div>
-
-<!-- Project Summary -->
-
-<div class="project-summary">
-
-    <div class="summary-card">
-        <h2>35+</h2>
-        <p>Total Projects</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>8</h2>
-        <p>Technical Domains</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>20+</h2>
-        <p>Technologies</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>100%</h2>
-        <p>Learning Mindset</p>
-    </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================================
-                SERVICES SECTION
-======================================== -->
-
-<section id="services">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <!-- <span>What I Do</span> -->
-
-            <h2>My Services</h2>
-
-            <p>
-                I build modern software solutions that combine great design, powerful functionality, and the latest technologies.
-            </p>
-
-        </div>
-
-        <div class="services-grid">
-
-            <!-- Service 1 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-brands fa-flutter"></i>
-
-                </div>
-
-                <h3>Flutter App Development</h3>
-
-                <p>
-                    Cross-platform Android and iOS applications with modern UI, smooth performance, and clean architecture.
-                </p>
-
-            </div>
-
-            <!-- Service 2 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-code"></i>
-
-                </div>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    Responsive websites, business landing pages, portfolios, dashboards, and modern web applications.
-                </p>
-
-            </div>
-
-            <!-- Service 3 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-brands fa-python"></i>
-
-                </div>
-
-                <h3>Python & FastAPI</h3>
-
-                <p>
-                    REST APIs, backend development, authentication systems, database integration, and scalable server-side solutions.
-                </p>
-
-            </div>
-
-            <!-- Service 4 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-brain"></i>
-
-                </div>
-
-                <h3>Artificial Intelligence</h3>
-
-                <p>
-                    AI applications, Prompt Engineering, Agentic AI workflows, automation, and intelligent software solutions.
-                </p>
-
-            </div>
-
-            <!-- Service 5 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-microchip"></i>
-
-                </div>
-
-                <h3>IoT Solutions</h3>
-
-                <p>
-                    ESP32-based automation systems, smart monitoring, industrial control, and connected IoT applications.
-                </p>
-
-            </div>
-
-            <!-- Service 6 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-pen-ruler"></i>
-
-                </div>
-
-                <h3>UI / UX Design</h3>
-
-                <p>
-                    Modern, user-friendly, responsive interfaces designed with usability, accessibility, and clean visual design.
-                </p>
-
-            </div>
-
-            <!-- Service 7 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-users"></i>
-
-                </div>
-
-                <h3>Project Management</h3>
-
-                <p>
-                    Agile planning, sprint management, requirement analysis, documentation, and team collaboration.
-                </p>
-
-            </div>
-
-            <!-- Service 8 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-lightbulb"></i>
-
-                </div>
-
-                <h3>Software Consulting</h3>
-
-                <p>
-                    Helping transform ideas into practical software solutions with the right technologies and development strategy.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ROBOTICS ================= -->
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project25.jpg" alt="Line Following Robot">
-
-    <div class="project-content">
-
-        <h3>Autonomous Line Following Robot</h3>
-
-        <p>
-            Designed an autonomous robot capable of following a predefined path using sensor-based navigation.
-        </p>
-
-        <div class="tags">
-            <span>Robotics</span>
-            <span>Sensors</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project26.jpg" alt="Obstacle Avoidance Robot">
-
-    <div class="project-content">
-
-        <h3>Obstacle Avoidance Robot</h3>
-
-        <p>
-            Built a robot capable of detecting and avoiding obstacles using ultrasonic sensors.
-        </p>
-
-        <div class="tags">
-            <span>Robotics</span>
-            <span>Arduino</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project27.jpg" alt="Bluetooth Robot">
-
-    <div class="project-content">
-
-        <h3>Bluetooth Controlled Robot</h3>
-
-        <p>
-            Mobile-controlled robot using Bluetooth communication for wireless movement.
-        </p>
-
-        <div class="tags">
-            <span>Bluetooth</span>
-            <span>Robotics</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project28.jpg" alt="WiFi Robot">
-
-    <div class="project-content">
-
-        <h3>Wi-Fi Controlled Robot</h3>
-
-        <p>
-            Developed a robot that can be controlled remotely through a web interface using Wi-Fi.
-        </p>
-
-        <div class="tags">
-            <span>ESP32</span>
-            <span>Wi-Fi</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project29.jpg" alt="Voice Robot">
-
-    <div class="project-content">
-
-        <h3>Voice Controlled Robot</h3>
-
-        <p>
-            Robot controlled through voice commands for hands-free navigation and control.
-        </p>
-
-        <div class="tags">
-            <span>Voice</span>
-            <span>AI</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="project-card robotics">
-
-    <img src="assets/images/project30.jpg" alt="AI Robot">
-
-    <div class="project-content">
-
-        <h3>AI Autonomous Robot</h3>
-
-        <p>
-            Intelligent robotic system combining computer vision and AI for autonomous decision-making.
-        </p>
-
-        <div class="tags">
-            <span>AI</span>
-            <span>Robotics</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= UI / UX ================= -->
-
-<div class="project-card uiux">
-
-    <img src="assets/images/project31.jpg" alt="UI Design">
-
-    <div class="project-content">
-
-        <h3>UI / UX Design Collection</h3>
-
-        <p>
-            A collection of modern mobile apps, dashboards, landing pages and business website designs created in Figma.
-        </p>
-
-        <div class="tags">
-            <span>Figma</span>
-            <span>UI/UX</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-brands fa-figma"></i> Figma</a>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= PROJECT MANAGEMENT ================= -->
-
-<div class="project-card management">
-
-    <img src="assets/images/project32.jpg" alt="Project Management">
-
-    <div class="project-content">
-
-        <h3>Software Project Management</h3>
-
-        <p>
-            Managed software projects using Agile methodology, sprint planning, documentation, and team collaboration.
-        </p>
-
-        <div class="tags">
-            <span>Agile</span>
-            <span>Scrum</span>
-            <span>Management</span>
-        </div>
-
-        <div class="project-links">
-            <a href="#"><i class="fa-solid fa-file-lines"></i> Documentation</a>
-        </div>
-
-    </div>
-
-</div>
-
-</div>
-
-<!-- Project Summary -->
-
-<div class="project-summary">
-
-    <div class="summary-card">
-        <h2>35+</h2>
-        <p>Total Projects</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>8</h2>
-        <p>Technical Domains</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>20+</h2>
-        <p>Technologies</p>
-    </div>
-
-    <div class="summary-card">
-        <h2>100%</h2>
-        <p>Learning Mindset</p>
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
-                CONTACT SECTION
-======================================== -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>Get In Touch</span>
-
-            <h2>Contact Me</h2>
-
-            <p>
-                Have a project, internship opportunity, or collaboration in mind? Feel free to contact me. I'll be happy to connect with you.
-            </p>
-
-        </div>
-
-        <div class="contact-container">
-
-            <!-- Contact Information -->
-
-            <div class="contact-info">
-
-                <h3>Let's Connect</h3>
-
-                <p>
-                    I'm always open to discussing software development, AI, Flutter, Web Development, IoT projects, or new opportunities.
-                </p>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <span>afridiharoon662@gmail.com</span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    <div>
-
-                        <h4>Phone</h4>
-
-                        <span>03301360962</span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <div>
-
-                        <h4>Location</h4>
-
-                        <span>Pakistan</span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-social">
-
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Contact Form -->
-
-            <div class="contact-form">
-
-                <form>
-
-                    <div class="input-group">
-
-                        <input
-                            type="text"
-                            placeholder="Your Name"
-                            required>
-
-                    </div>
-
-                    <div class="input-group">
-
-                        <input
-                            type="email"
-                            placeholder="Your Email"
-                            required>
-
-                    </div>
-
-                    <div class="input-group">
-
-                        <input
-                            type="text"
-                            placeholder="Subject"
-                            required>
-
-                    </div>
-
-                    <div class="input-group">
-
-                        <textarea
-                            rows="6"
-                            placeholder="Your Message"
-                            required></textarea>
-
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="btn">
-
-                        Send Message
-
+                <!-- Projects Row Slider & Floating Center Left/Right Nav Buttons -->
+                <div class="row-slider-container projects-slider-wrapper">
+
+                    <!-- Floating Left Center Button -->
+                    <button class="projects-slider-btn prev-btn" id="projects-prev" aria-label="Previous Projects">
+                        <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
-                </form>
+                    <!-- Projects Row Track -->
+                    <div class="row-slider-track" id="projects-track">
+
+                        <!-- Project 1: MediStore (Flutter) -->
+                        <div class="slider-card project-card flutter">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: MediStore Project Image -->
+                                <img src="assets/images/project1.jpg" alt="MediStore Pharmacy System" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">Flutter</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>MediStore Pharmacy System</h3>
+                                <p>Comprehensive pharmacy management system with barcode scanner, offline SQLite inventory tracking, and AI medicine assistant.</p>
+                                <div class="tags">
+                                    <span>Flutter</span>
+                                    <span>SQLite</span>
+                                    <span>AI Assistant</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Tech Pioneers Website (Web) -->
+                        <div class="slider-card project-card web">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: Tech Pioneers Website Image -->
+                                <img src="assets/images/project6.jpg" alt="Tech Pioneers Company Website" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">Web</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Tech Pioneers Portal</h3>
+                                <p>A modern, highly responsive software engineering company portal featuring glassmorphic design and micro-animations.</p>
+                                <div class="tags">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: FastAPI REST Service (Python) -->
+                        <div class="slider-card project-card python">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: FastAPI Backend Image -->
+                                <img src="assets/images/project9.jpg" alt="FastAPI Backend Service" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">Python</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>FastAPI Scalable Backend</h3>
+                                <p>High-performance asynchronous backend service with JWT authentication, PostgreSQL ORM mapping, and rate limiting.</p>
+                                <div class="tags">
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-book"></i> API Docs</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Agentic AI Assistant (AI) -->
+                        <div class="slider-card project-card ai">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: Agentic AI Project Image -->
+                                <img src="assets/images/project14.jpg" alt="Agentic AI Workflow Bot" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1677442136019-21780efad99a?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">AI</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Agentic AI Workflow Assistant</h3>
+                                <p>Intelligent multi-agent workflow assistant capable of executing automated coding tasks and document analysis.</p>
+                                <div class="tags">
+                                    <span>LLMs</span>
+                                    <span>Agentic AI</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: ESP32 Motor Automation (IoT) -->
+                        <div class="slider-card project-card iot">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: Industrial Motor Control Image -->
+                                <img src="assets/images/project19.jpg" alt="Industrial Motor Control System" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">IoT</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>ESP32 Industrial Motor HCI</h3>
+                                <p>Web-controlled Human Computer Interface for real-time monitoring, telemetry logging, and relay control of industrial motors.</p>
+                                <div class="tags">
+                                    <span>ESP32</span>
+                                    <span>IoT</span>
+                                    <span>Web HCI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: Smart ESP32-CAM Monitoring (IoT) -->
+                        <div class="slider-card project-card iot">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: ESP32-CAM Image -->
+                                <img src="assets/images/project21.jpg" alt="ESP32-CAM Monitoring" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">IoT</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>ESP32-CAM Vision System</h3>
+                                <p>Smart monitoring solution using ESP32-CAM with real-time video stream telemetry and Wi-Fi control dashboard.</p>
+                                <div class="tags">
+                                    <span>ESP32-CAM</span>
+                                    <span>Wi-Fi</span>
+                                    <span>Sensors</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Autonomous Line Follower (Robotics) -->
+                        <div class="slider-card project-card robotics">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: Robotics Project Image -->
+                                <img src="assets/images/project25.jpg" alt="Autonomous Robotics Vehicle" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">Robotics</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Autonomous Navigation Robot</h3>
+                                <p>Self-navigating robotics platform utilizing IR optical sensors, obstacle detection, and PID loop motor control.</p>
+                                <div class="tags">
+                                    <span>Arduino</span>
+                                    <span>Robotics</span>
+                                    <span>C++</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-video"></i> Video</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 8: Flutter Barcode Scanner (Flutter) -->
+                        <div class="slider-card project-card flutter">
+                            <div class="project-img-wrapper">
+                                <!-- IMAGE LINK SLOT: Barcode Scanner Image -->
+                                <img src="assets/images/project2.jpg" alt="Medicine Barcode Scanner" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop';">
+                                <span class="project-cat-badge">Flutter</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Medicine Barcode Scanner</h3>
+                                <p>High-speed barcode scanner mobile app for instant medicine lookup, stock validation, and batch management.</p>
+                                <div class="tags">
+                                    <span>Flutter</span>
+                                    <span>Camera API</span>
+                                    <span>SQLite</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> App</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Right Center Button -->
+                    <button class="projects-slider-btn next-btn" id="projects-next" aria-label="Next Projects">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+                <!-- Center View All Button (Shown when 'All' filter is active) -->
+                <div class="view-all-container" id="viewAllProjectsContainer">
+                    <button id="viewAllProjectsBtn" class="btn btn-outline">
+                        <i class="fa-solid fa-grid-2"></i> View All Projects
+                    </button>
+                </div>
 
             </div>
+        </section>
 
-        </div>
+        <!-- ==========================================
+            VIEW 6: CONTACT PAGE
+        =========================================== -->
+        <section id="contact-view" class="page-view">
+            <div class="container">
 
-    </div>
+                <div class="section-header">
+                    <h2>Contact Me</h2>
+                    <p>Have a project inquiry, engineering role, or technical collaboration in mind? Reach out today.</p>
+                </div>
 
-</section>
+                <div class="contact-container">
 
-<!-- ========================================
-                FOOTER
-======================================== -->
+                    <!-- Contact Info Column -->
+                    <div class="contact-info">
+                        <h3>Let's Build Something Great Together</h3>
+                        <p>I am available for software development opportunities, technical consulting, and innovative projects.</p>
 
-<footer>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <a href="mailto:afridiharoon662@gmail.com">afridiharoon662@gmail.com</a>
+                            </div>
+                        </div>
 
-    <div class="container">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Phone / WhatsApp</h4>
+                                <a href="tel:+923301360962">+92 330 1360962</a>
+                            </div>
+                        </div>
 
-        <div class="footer-content">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Pakistan</span>
+                            </div>
+                        </div>
 
-            <!-- About -->
+                        <div class="contact-social-links">
+                            <a href="https://github.com/muhammadharoon303" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/muhammadharoon" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:afridiharoon662@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
 
-            <div class="footer-column">
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm">
+                            <div class="input-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
 
-                <h3>Muhammad Haroon</h3>
+                            <div class="input-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
 
-                <p>
+                            <div class="input-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                            </div>
 
-                    Software Engineer passionate about Flutter,
-                    Web Development, Python, Artificial Intelligence,
-                    IoT, Robotics, UI/UX Design and Project Management.
+                            <div class="input-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell me about your project or requirement..." required></textarea>
+                            </div>
 
-                </p>
-
-                <div class="footer-social">
-
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                            <button type="submit" class="btn btn-full">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
 
                 </div>
 
             </div>
+        </section>
 
-            <!-- Quick Links -->
+    </main>
 
-            <div class="footer-column">
+    <!-- =======================
+        FOOTER
+    ======================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Muhammad Haroon</h3>
+                    <p>Software Engineer focused on Flutter, Web, Python, AI &amp; IoT.</p>
+                </div>
 
-                <h3>Quick Links</h3>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home" class="nav-tab" data-view="home">Home</a></li>
+                        <li><a href="#about" class="nav-tab" data-view="about">About</a></li>
+                        <li><a href="#academic" class="nav-tab" data-view="academic">Academic</a></li>
+                        <li><a href="#skills" class="nav-tab" data-view="skills">Skills</a></li>
+                        <li><a href="#projects" class="nav-tab" data-view="projects">Projects</a></li>
+                        <li><a href="#contact" class="nav-tab" data-view="contact">Contact</a></li>
+                    </ul>
+                </div>
 
-                <ul>
-
-                    <li><a href="#home">Home</a></li>
-
-                    <li><a href="#about">About</a></li>
-
-                    <li><a href="#skills">Skills</a></li>
-
-                    <li><a href="#projects">Projects</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-
+                <div class="footer-socials">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/muhammadharoon303" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/muhammadharoon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:afridiharoon662@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Services -->
-
-            <div class="footer-column">
-
-                <h3>Services</h3>
-
-                <ul>
-
-                    <li>Flutter Development</li>
-
-                    <li>Web Development</li>
-
-                    <li>Python Development</li>
-
-                    <li>Artificial Intelligence</li>
-
-                    <li>IoT Solutions</li>
-
-                </ul>
-
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Muhammad Haroon. All rights reserved.</p>
             </div>
-
-            <!-- Contact -->
-
-            <div class="footer-column">
-
-                <h3>Contact</h3>
-
-                <p>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    afridiharoon662@gmail.com
-
-                </p>
-
-                <p>
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    03301360962
-
-                </p>
-
-                <p>
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    Pakistan
-
-                </p>
-
-            </div>
-
         </div>
+    </footer>
 
-        <hr>
-
-        <div class="footer-bottom">
-
-            <p>
-
-                © 2026 Muhammad Haroon.
-                All Rights Reserved.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- =========================
-        BACK TO TOP
-========================= -->
-
-<button id="backToTop">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-<script src="js/script.js"></script>
+    <!-- JS Files -->
+    <script src="js/script.js"></script>
 
 </body>
 
