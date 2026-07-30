@@ -13,48 +13,41 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             preloader.style.opacity = "0";
             preloader.style.visibility = "hidden";
-        }, 500);
+        }, 400);
     }
 
-    const header       = document.querySelector("header");
-    const progressBar  = document.getElementById("scroll-progress");
+    const header      = document.querySelector("header");
+    const progressBar = document.getElementById("scroll-progress");
 
-    // Unified scroll handler: sticky header + progress bar
-    // passive:true = browser skips waiting for JS -> 60fps guaranteed
-    window.addEventListener("scroll", function() {
-        // 1. Sticky header
-        if (window.scrollY > 40) {
-            if (header) header.classList.add("scrolled");
-        } else {
-            if (header) header.classList.remove("scrolled");
+    // Unified 60fps Scroll State Handler
+    function handleScrollUpdate(scrollY) {
+        const sY = scrollY !== undefined ? scrollY : window.scrollY;
+        if (header) {
+            if (sY > 30) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
         }
-
-        // 2. Scroll progress bar
         if (progressBar) {
-            var docH   = document.documentElement.scrollHeight - window.innerHeight;
-            var pct    = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? (sY / docH) * 100 : 0;
             progressBar.style.width = pct.toFixed(1) + "%";
         }
-    }, { passive: true });
+    }
 
     /* =========================================
        2. LIGHT / DARK THEME TOGGLE
-       Persisted to localStorage — survives refresh.
-       Icon: sun shown in dark mode (click = go light)
-             moon shown in light mode (click = go dark)
     ========================================= */
     const themeToggle = document.getElementById("themeToggle");
     const themeIcon   = document.getElementById("themeIcon");
     const htmlEl      = document.documentElement;
 
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    htmlEl.setAttribute("data-theme", savedTheme);
-    applyThemeIcon(savedTheme);
+    let isLightTheme = localStorage.getItem("theme") === "light";
+    htmlEl.setAttribute("data-theme", isLightTheme ? "light" : "dark");
+    applyThemeIcon(isLightTheme ? "light" : "dark");
 
     if (themeToggle) {
         themeToggle.addEventListener("click", () => {
-            const current = htmlEl.getAttribute("data-theme") || "dark";
-            const next    = current === "dark" ? "light" : "dark";
+            isLightTheme = !isLightTheme;
+            const next = isLightTheme ? "light" : "dark";
             htmlEl.setAttribute("data-theme", next);
             localStorage.setItem("theme", next);
             applyThemeIcon(next);
@@ -63,8 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function applyThemeIcon(theme) {
         if (!themeIcon) return;
-        // In dark mode show Sun (click to go light)
-        // In light mode show Moon (click to go dark)
         themeIcon.className = theme === "light" ? "fa-solid fa-moon" : "fa-solid fa-sun";
         if (themeToggle) {
             themeToggle.title = theme === "light" ? "Switch to Dark Theme" : "Switch to Light Theme";
@@ -72,67 +63,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* =========================================
-       3. MOBILE NAVBAR TOGGLE
-    ========================================= */
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector(".nav-links");
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-            menuBtn.classList.toggle("active");
-            // Keep screen-reader state accurate
-            const expanded = navLinks.classList.contains("active");
-            menuBtn.setAttribute("aria-expanded", String(expanded));
-        });
-
-        // Close menu when pressing Escape
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && navLinks.classList.contains("active")) {
-                navLinks.classList.remove("active");
-                menuBtn.classList.remove("active");
-                menuBtn.setAttribute("aria-expanded", "false");
-                menuBtn.focus();
-            }
-        });
-    }
-
-    /* =========================================
        3. LENIS SMOOTH SCROLL FRAMEWORK & NAV JUMP
-       Lenis framework provides buttery 60fps momentum
-       scrolling for mouse wheel / touch.
-       Header nav links jump DIRECTLY to the target section
-       screen immediately without slow scrolling through
-       intermediate sections.
     ========================================= */
     let lenis = null;
     if (typeof Lenis !== 'undefined') {
         lenis = new Lenis({
-            duration: 1.2,
+            duration: 1.0,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             smoothWheel: true,
-            smoothTouch: false
+            smoothTouch: false,
+            touchMultiplier: 1.5
         });
 
-        function raf(time) {
-            lenis.raf(time);
+        // Sync Lenis with GSAP Ticker or RAF loop for 60fps locked scroll
+        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+            lenis.on('scroll', (e) => {
+                ScrollTrigger.update();
+                handleScrollUpdate(e.scroll);
+            });
+            gsap.ticker.add((time) => {
+                lenis.raf(time * 1000);
+            });
+            gsap.ticker.lagSmoothing(0);
+        } else {
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
             requestAnimationFrame(raf);
+            lenis.on('scroll', (e) => handleScrollUpdate(e.scroll));
         }
-        requestAnimationFrame(raf);
-
-        // Sync header & scroll progress bar with Lenis scroll
-        lenis.on('scroll', (e) => {
-            const sY = e.scroll !== undefined ? e.scroll : window.scrollY;
-            if (header) {
-                if (sY > 40) header.classList.add("scrolled");
-                else header.classList.remove("scrolled");
-            }
-            if (progressBar) {
-                const docH = document.documentElement.scrollHeight - window.innerHeight;
-                const pct = docH > 0 ? (sY / docH) * 100 : 0;
-                progressBar.style.width = pct.toFixed(1) + "%";
-            }
-        });
+    } else {
+        // Native fallback scroll listener
+        window.addEventListener("scroll", () => handleScrollUpdate(), { passive: true });
     }
 
     const sections = document.querySelectorAll('.page-view');
@@ -478,14 +441,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
                 this.size = Math.random() * 2 + 1;
-                this.vx = (Math.random() - 0.5) * 0.6;
-                this.vy = (Math.random() - 0.5) * 0.6;
-                this.density = (Math.random() * 20) + 1;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.density = (Math.random() * 15) + 1;
             }
 
             draw() {
-                const isLight = document.documentElement.getAttribute("data-theme") === "light";
-                ctx.fillStyle = isLight ? "rgba(37, 99, 235, 0.45)" : "rgba(59, 130, 246, 0.6)";
+                ctx.fillStyle = isLightTheme ? "rgba(37, 99, 235, 0.45)" : "rgba(59, 130, 246, 0.6)";
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.closePath();
@@ -524,8 +486,8 @@ document.addEventListener("DOMContentLoaded", () => {
         initParticles();
 
         function connectParticles() {
-            const isLight = document.documentElement.getAttribute("data-theme") === "light";
-            const strokeStyle = isLight ? "rgba(37, 99, 235," : "rgba(59, 130, 246,";
+            if (window.innerWidth <= 768) return; // Skip line connections on mobile for ultra performance
+            const strokeStyle = isLightTheme ? "rgba(37, 99, 235," : "rgba(59, 130, 246,";
 
             for (let a = 0; a < particles.length; a++) {
                 for (let b = a + 1; b < particles.length; b++) {

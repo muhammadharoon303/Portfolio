@@ -9,28 +9,28 @@
    ROOT SYSTEM TOKENS
 ========================================= */
 :root {
-    /* ---- Backgrounds â€” layered depth (Awwwards pattern) ---- */
-    --bg-dark: #07090f;          /* Near-black with blue undertone â€” not pure #000 */
+    /* ---- Backgrounds — layered depth (Awwwards pattern) ---- */
+    --bg-dark: #07090f;          /* Near-black with blue undertone — not pure #000 */
     --bg-surface: #0d1220;       /* Cards sit 1 step above body */
     --bg-card: rgba(13, 18, 32, 0.72);       /* Glass layer 1 */
     --bg-card-hover: rgba(18, 28, 52, 0.88); /* Glass layer 2 on hover */
-    --bg-card-deep: rgba(8, 12, 20, 0.9);    /* Deepest glass â€” nav, overlays */
+    --bg-card-deep: rgba(8, 12, 20, 0.9);    /* Deepest glass — nav, overlays */
 
-    /* ---- Accent System â€” 80/20 rule (Awwwards: accent sparingly) ---- */
-    --accent-primary: #3b82f6;   /* Electric Blue â€” CTAs, active states only */
-    --accent-secondary: #06b6d4; /* Cyan â€” secondary highlights */
-    --accent-purple: #8b5cf6;    /* Violet â€” decorative accents */
+    /* ---- Accent System — 80/20 rule (Awwwards: accent sparingly) ---- */
+    --accent-primary: #3b82f6;   /* Electric Blue — CTAs, active states only */
+    --accent-secondary: #06b6d4; /* Cyan — secondary highlights */
+    --accent-purple: #8b5cf6;    /* Violet — decorative accents */
     --accent-emerald: #10b981;   /* Success / availability */
     --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
     --accent-gradient-warm: linear-gradient(135deg, #6366f1 0%, #3b82f6 50%, #06b6d4 100%);
 
-    /* ---- Typography â€” improved contrast hierarchy ---- */
-    --text-primary: #f1f5f9;     /* Slightly warm white â€” easier on eyes */
+    /* ---- Typography — improved contrast hierarchy ---- */
+    --text-primary: #f1f5f9;     /* Slightly warm white — easier on eyes */
     --text-secondary: #cbd5e1;
-    --text-muted: #64748b;       /* Darker muted â€” stronger visual hierarchy */
+    --text-muted: #64748b;       /* Darker muted — stronger visual hierarchy */
     --text-subtle: #475569;      /* Placeholder, captions */
 
-    /* ---- Borders â€” depth levels ---- */
+    /* ---- Borders — depth levels ---- */
     --border-glass: rgba(255, 255, 255, 0.07);
     --border-glass-strong: rgba(255, 255, 255, 0.12);
     --border-glow: rgba(59, 130, 246, 0.3);
@@ -43,7 +43,7 @@
     --radius-xl: 28px;
     --radius-full: 9999px;
 
-    /* ---- Shadows â€” layered for premium depth ---- */
+    /* ---- Shadows — layered for premium depth ---- */
     --shadow-glass: 0 8px 32px -8px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255,255,255,0.04) inset;
     --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.2), 0 0 60px rgba(59, 130, 246, 0.08);
     --shadow-card: 0 4px 24px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.05) inset;
@@ -57,7 +57,7 @@
 }
 
 /* =========================================
-   LIGHT THEME â€” [data-theme="light"]
+   LIGHT THEME — [data-theme="light"]
    Professional warm-white palette.
    Every token that differs from dark mode
    is redefined here. All other tokens inherit.
@@ -69,24 +69,24 @@
     --bg-card-hover: rgba(240, 244, 248, 0.95);
     --bg-card-deep: rgba(255, 255, 255, 0.98);
 
-    /* Accent stays blue â€” consistent brand */
+    /* Accent stays blue — consistent brand */
     --accent-primary: #2563eb;
     --accent-secondary: #0891b2;
     --accent-gradient: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
 
-    /* Text â€” dark on light for readability */
+    /* Text — dark on light for readability */
     --text-primary: #0f172a;
     --text-secondary: #334155;
     --text-muted: #64748b;
     --text-subtle: #94a3b8;
 
-    /* Borders â€” subtle light lines */
+    /* Borders — subtle light lines */
     --border-glass: rgba(15, 23, 42, 0.08);
     --border-glass-strong: rgba(15, 23, 42, 0.14);
     --border-glow: rgba(37, 99, 235, 0.25);
     --border-glow-soft: rgba(37, 99, 235, 0.12);
 
-    /* Shadows â€” softer for light mode */
+    /* Shadows — softer for light mode */
     --shadow-glass: 0 4px 24px rgba(15, 23, 42, 0.08), 0 1px 0 rgba(255,255,255,0.9) inset;
     --shadow-card: 0 2px 16px rgba(15, 23, 42, 0.08), 0 1px 0 rgba(255,255,255,0.8) inset;
     --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.15), 0 0 48px rgba(37, 99, 235, 0.06);
@@ -104,7 +104,7 @@
 
 html {
     font-size: 16px;
-    /* Smoother font rendering â€” matches premium sites */
+    /* Smoother font rendering — matches premium sites */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -134,17 +134,17 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-primary);
-    line-height: 1.7;           /* Improved readability â€” 1.6 â†’ 1.7 */
+    line-height: 1.7;           /* Improved readability — 1.6 â†’ 1.7 */
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Subtle noise grain â€” Awwwards sites use this to add texture depth */
+    /* Subtle noise grain — Awwwards sites use this to add texture depth */
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* ---- Ambient glow â€” two blobs create cinematic depth (top portfolios use 3-4) ---- */
+/* ---- Ambient glow — two blobs create cinematic depth (top portfolios use 3-4) ---- */
 body::before {
     content: '';
     position: fixed;
@@ -174,7 +174,7 @@ body::after {
     will-change: transform;
 }
 
-/* Slow drift â€” barely perceptible, adds life without distracting */
+/* Slow drift — barely perceptible, adds life without distracting */
 @keyframes ambientShift {
     from { transform: translate(0, 0) scale(1); }
     to   { transform: translate(30px, -20px) scale(1.08); }
@@ -213,7 +213,7 @@ button {
     background: none;
 }
 
-/* ---- Global focus ring â€” accessibility ---- */
+/* ---- Global focus ring — accessibility ---- */
 :focus-visible {
     outline: 2px solid var(--accent-primary);
     outline-offset: 3px;
@@ -265,7 +265,7 @@ header {
     width: 100%;
     z-index: 1000;
     padding: 16px 0;
-    /* Only animate padding, background and box-shadow â€” avoids repaints */
+    /* Only animate padding, background and box-shadow — avoids repaints */
     transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1),
                 background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -287,7 +287,7 @@ header {
     height: 3px;
     background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 50%, #8b5cf6 100%);
     z-index: 9999;
-    transition: width 0.08s linear;
+    will-change: width;
     box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
@@ -298,9 +298,9 @@ header {
 
 
 header.scrolled {
-    padding: 10px 0;
-    background: rgba(8, 12, 20, 0.96);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    background: rgba(7, 9, 15, 0.94);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 /* =========================================
@@ -443,7 +443,7 @@ header.scrolled {
 
 /* =========================================
    MAIN SCROLL LAYOUT
-   All sections stack vertically â€” no SPA routing.
+   All sections stack vertically — no SPA routing.
    Each section is always visible; scroll drives
    the navbar highlight via IntersectionObserver.
 ========================================= */
@@ -490,7 +490,7 @@ header.scrolled {
     margin: 0 auto 32px;
 }
 
-/* ---- Sub-heading: JetBrains Mono label â€” developer credibility marker ---- */
+/* ---- Sub-heading: JetBrains Mono label — developer credibility marker ---- */
 .sub-heading {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
@@ -503,14 +503,14 @@ header.scrolled {
     opacity: 0.8;
 }
 
-/* ---- Section H2: top portfolios use 2.8â€“3.2rem with gradient heads ---- */
+/* ---- Section H2: top portfolios use 2.8–3.2rem with gradient heads ---- */
 .section-header h2 {
-    font-size: clamp(2rem, 4vw, 2.8rem); /* Fluid â€” scales with viewport */
+    font-size: clamp(2rem, 4vw, 2.8rem); /* Fluid — scales with viewport */
     font-weight: 800;
     margin-bottom: 16px;
     letter-spacing: -0.5px;
     line-height: 1.15;
-    /* Multi-stop gradient: white â†’ light blue â†’ muted â€” depth in text */
+    /* Multi-stop gradient: white â†’ light blue â†’ muted — depth in text */
     background: linear-gradient(160deg, #ffffff 0%, #e2e8f0 40%, #94a3b8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -652,14 +652,14 @@ header.scrolled {
     margin-bottom: 6px;
 }
 
-/* ---- H1: fluid sizing, tighter tracking â€” Awwwards standard ---- */
+/* ---- H1: fluid sizing, tighter tracking — Awwwards standard ---- */
 .hero-text h1 {
     font-size: clamp(2.8rem, 5.5vw, 4.2rem);
     font-weight: 800;
     margin: 4px 0 12px;
     letter-spacing: -2px;        /* Tight tracking on large display text */
     line-height: 1.08;
-    /* Gradient name â€” top portfolios make the name the visual anchor */
+    /* Gradient name — top portfolios make the name the visual anchor */
     background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 60%, #93c5fd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -748,7 +748,7 @@ header.scrolled {
     border-radius: 50%;
     padding: 8px;
     background: var(--accent-gradient);
-    /* Soft pulsing glow â€” tells the eye there is life here */
+    /* Soft pulsing glow — tells the eye there is life here */
     box-shadow: var(--shadow-glow);
     animation: imageRingPulse 4s ease-in-out infinite;
     will-change: box-shadow;
@@ -831,13 +831,13 @@ header.scrolled {
     gap: 16px;
     margin-top: 28px;
     padding-top: 20px;
-    border-top: 1px solid var(--border-glass); â€” visual rhythm */
+    border-top: 1px solid var(--border-glass); /* Visual rhythm */
 }
 
 .stat-card {
     background: var(--bg-card);
     backdrop-filter: blur(16px);
-    /* Inset top highlight â€” premium glass look from Awwwards portfolios */
+    /* Inset top highlight — premium glass look from Awwwards portfolios */
     border: 1px solid var(--border-glass);
     border-top: 1px solid rgba(255,255,255,0.1);
     border-radius: var(--radius-lg);
@@ -914,21 +914,25 @@ header.scrolled {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
+    padding: 6px;
+    background: var(--accent-gradient);
     border: 1px solid var(--border-glass);
     box-shadow: var(--shadow-glass);
-    /* Transition the border glow on hover for a premium feel */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.4s ease;
 }
 
 .about-image:hover .image-frame {
-    border-color: rgba(59, 130, 246, 0.3);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 16px 40px rgba(59, 130, 246, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.2);
 }
 
 .about-image img {
     width: 100%;
     height: 420px;
     object-fit: cover;
+    object-position: center top; /* Centers face and gives head comfortable headroom */
+    border-radius: calc(var(--radius-lg) - 4px);
+    background: var(--bg-surface);
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
 }
@@ -1029,7 +1033,7 @@ header.scrolled {
     overflow: hidden;
 }
 
-/* Diagonal corner accent â€” subtle Awwwards design pattern */
+/* Diagonal corner accent — subtle Awwwards design pattern */
 .focus-card::before {
     content: '';
     position: absolute;
@@ -1284,7 +1288,7 @@ header.scrolled {
     display: flex;
     align-items: center;
     gap: 8px;
-    /* Subtle slide-right on hover â€” guides eye along the list */
+    /* Subtle slide-right on hover — guides eye along the list */
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -1355,7 +1359,7 @@ header.scrolled {
     overflow: hidden;
 }
 
-/* Shimmer sweep â€” confirms progress bar is loaded, not static */
+/* Shimmer sweep — confirms progress bar is loaded, not static */
 .progress-fill::after {
     content: '';
     position: absolute;
@@ -1489,7 +1493,7 @@ header.scrolled {
     overflow: hidden;
 }
 
-/* Dark scrim slides in on hover â€” improves text contrast */
+/* Dark scrim slides in on hover — improves text contrast */
 .project-img-wrapper::after {
     content: '';
     position: absolute;
@@ -1772,7 +1776,7 @@ header.scrolled {
 /* ---- Footer: top portfolios use a very dark footer with a gradient top border ---- */
 footer {
     background: #04060a;
-    /* Gradient border line â€” a premium Awwwards signature detail */
+    /* Gradient border line — a premium Awwwards signature detail */
     border-top: 1px solid transparent;
     background-clip: padding-box;
     position: relative;
@@ -1828,7 +1832,7 @@ footer::before {
     display: inline-block;
 }
 
-/* Underline slides in on hover â€” clear affordance for a link */
+/* Underline slides in on hover — clear affordance for a link */
 .footer-nav a::after {
     content: '';
     position: absolute;
@@ -1858,7 +1862,7 @@ footer::before {
 }
 
 /* =========================================
-   PERFORMANCE â€” reduce motion for users who prefer it
+   PERFORMANCE — reduce motion for users who prefer it
    Respects OS setting, maintains 60 FPS for everyone else
 ========================================= */
 @media (prefers-reduced-motion: reduce) {
@@ -2034,9 +2038,9 @@ footer::before {
 
 /* 1. Header & Navbar */
 [data-theme="light"] header.scrolled {
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(240, 244, 248, 0.94);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+    border-bottom-color: rgba(15, 23, 42, 0.1);
 }
 
 [data-theme="light"] .logo span {
@@ -2518,4 +2522,214 @@ footer::before {
     border-color: var(--border-glow-soft);
     box-shadow: var(--shadow-glow);
     transform: translateY(-4px);
+}
+
+
+/* =========================================
+   CERTIFICATES SECTION STYLES
+========================================= */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.certificate-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cert-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+}
+
+.cert-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.cert-icon {
+    font-size: 2.2rem;
+    color: var(--accent-primary);
+    margin-bottom: 14px;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.certificate-card:hover .cert-icon {
+    transform: scale(1.15) rotate(-6deg);
+}
+
+.certificate-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.cert-issuer {
+    font-size: 0.85rem;
+    color: var(--accent-secondary);
+    font-weight: 500;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+[data-theme="light"] .cert-badge {
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(37, 99, 235, 0.18);
+    color: #2563eb;
+}
+
+[data-theme="light"] .certificate-card h3 {
+    color: #0f172a;
+}
+
+[data-theme="light"] .certificate-card p {
+    color: #475569;
+}
+
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   LIGHT MODE BUTTONS & INTERACTIVE ELEMENTS OVERRIDES
+========================================================= */
+
+/* Primary Outline Buttons (Academic Journey, View All Projects, etc.) */
+[data-theme="light"] .btn-outline {
+    background: rgba(255, 255, 255, 0.95);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .btn-outline:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+/* Ghost Buttons (Resume, etc.) */
+[data-theme="light"] .btn-ghost {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    color: #0f172a;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .btn-ghost:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+/* Row Slider Nav Buttons */
+[data-theme="light"] .slider-btn {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    color: #0f172a;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .slider-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 16px rgba(37, 99, 235, 0.4);
+}
+
+/* Floating Center Slider Arrows */
+[data-theme="light"] .projects-slider-btn {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    color: #0f172a;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.1);
+}
+
+[data-theme="light"] .projects-slider-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.45);
+}
+
+/* Project Category Filter Buttons */
+[data-theme="light"] .filter-btn {
+    background: rgba(255, 255, 255, 0.95);
+    color: #334155;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .filter-btn:hover {
+    color: #0f172a;
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.4);
+}
+
+[data-theme="light"] .filter-btn.active {
+    background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%) !important;
+    color: #ffffff !important;
+    border-color: #2563eb;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35);
+}
+
+/* Social Icon Links */
+[data-theme="light"] .social-links a,
+[data-theme="light"] .contact-social-links a {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    color: #334155;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .social-links a:hover,
+[data-theme="light"] .contact-social-links a:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+/* Demo / Code links in cards */
+[data-theme="light"] .project-links a {
+    color: #334155;
+}
+
+[data-theme="light"] .project-links a:hover {
+    color: #2563eb;
 }
